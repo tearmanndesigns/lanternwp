@@ -30,3 +30,55 @@ along with this program. If not, see https://www.gnu.org/licenses/gpl-2.0.html.
 /* =============================================
    Global resets / base styles go below this line
    ============================================= */
+
+/* Heading font — self-hosted variable font, Latin subset.
+   Replace the src paths once the font files are added under /assets/fonts/ */
+@font-face {
+	font-family: "Atkinson Hyperlegible Next";
+	src: url("assets/fonts/AtkinsonHyperlegibleNext-Variable.woff2") format("woff2-variations");
+	font-weight: 200 800;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "Atkinson Hyperlegible Next";
+	src: url("assets/fonts/AtkinsonHyperlegibleNext-Italic-Variable.woff2") format("woff2-variations");
+	font-weight: 200 800;
+	font-style: italic;
+	font-display: swap;
+}
+
+/* Interactive states — reference the theme.json design tokens via CSS
+   custom properties. Do not hardcode colors here; if a value needs to
+   change, change it in theme.json so the editor and front end stay in sync. */
+
+/* Focus: never removed, always visible, never color-only */
+:focus-visible {
+	outline: var(--wp--custom--focus-ring-width) solid var(--wp--custom--focus-ring-color);
+	outline-offset: var(--wp--custom--focus-ring-offset);
+}
+
+/* Hover: shifts to the darker primary tone, not a contrast downgrade */
+a:hover,
+button:hover,
+.wp-block-button__link:hover {
+	color: var(--wp--preset--color--primary-dark);
+}
+
+/* Active: same shift as hover, plus a subtle non-color signal */
+a:active,
+button:active,
+.wp-block-button__link:active {
+	color: var(--wp--preset--color--primary-dark);
+	transform: scale(0.98);
+}
+
+/* Disabled: reduced opacity plus cursor change — never color alone,
+   since color-blind users can't reliably distinguish a dimmed hue */
+button:disabled,
+input:disabled,
+.wp-block-button__link:disabled {
+	opacity: 0.6;
+	cursor: not-allowed;
+}
