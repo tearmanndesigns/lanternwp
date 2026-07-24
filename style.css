@@ -1,0 +1,32 @@
+/*
+Theme Name: Lantern
+Theme URI: https://tearmanndesigns.com/lantern
+Author: Tearmann Designs
+Author URI: https://tearmanndesigns.com
+Description: A standalone, accessibility-first and performance-first WordPress theme built for developers and DIY builders. Classic PHP templates with theme.json for block pattern and style support.
+Version: 0.1.0
+Requires at least: 6.8
+Tested up to: 6.8
+Requires PHP: 8.4
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: lantern
+Tags: accessibility-ready, block-patterns, custom-colors, custom-menu, featured-images, threaded-comments, translation-ready
+
+This program is free software; you can redistribute it and/or modify
+it under the terms of the GNU General Public License as published by
+the Free Software Foundation; either version 2 of the License, or
+(at your option) any later version.
+
+This program is distributed in the hope that it will be useful,
+but WITHOUT ANY WARRANTY; without even the implied warranty of
+MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License
+along with this program. If not, see https://www.gnu.org/licenses/gpl-2.0.html.
+*/
+
+/* =============================================
+   Global resets / base styles go below this line
+   ============================================= */

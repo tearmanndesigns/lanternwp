@@ -1,0 +1,54 @@
+# Dependencies
+node_modules/
+vendor/
+
+# Build output (adjust if you commit compiled CSS/JS — see note below)
+dist/
+build/
+*.min.css
+*.min.js
+!*.min.css.map
+!*.min.js.map
+
+# Sass/Less cache
+.sass-cache/
+*.css.map
+
+# npm / yarn / pnpm
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.pnpm-store/
+
+# Composer (if used for PHP dependencies/linting tools)
+composer.lock
+
+# Environment / local config
+.env
+.env.local
+
+# OS files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Editor / IDE
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+
+# WordPress-specific local artifacts
+*.log
+wp-content/uploads/
+wp-content/upgrade/
+.htaccess
+
+# Packaged theme zips (build artifacts, not source)
+*.zip
+
+# Local testing / staging config
+wp-config-local.php
